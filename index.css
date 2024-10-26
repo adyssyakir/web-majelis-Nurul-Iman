@@ -1,0 +1,205 @@
+/* Reset dasar untuk menghilangkan margin dan padding default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mengatur tampilan body */
+body {
+    font-family: 'Arial', sans-serif; /* Mengatur jenis font */
+    background-color: #050505; /* Warna latar belakang */
+    color: #333; /* Warna teks */
+    line-height: 1.6; /* Jarak antar baris */
+}
+
+/* Header */
+header {
+    background-color: #007BFF; /* Warna latar belakang header */
+    color: white; /* Warna teks header */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan untuk header */
+}
+
+nav ul {
+    list-style-type: none; /* Menghilangkan bullet */
+}
+
+nav ul li {
+    display: inline; /* Menampilkan link secara horizontal */
+    margin: 0 15px; /* Jarak antar link */
+}
+
+nav ul li a {
+    color: white; /* Warna link */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    font-weight: bold; /* Menebalkan teks link */
+    transition: color 0.3s; /* Transisi untuk efek hover */
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Warna saat hover */
+}
+
+/* Hero Section */
+#hero {
+    background: url('hero-image.jpg') no-repeat center center/cover; /* Ganti dengan gambar hero yang sesuai */
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: rgb(5, 5, 5); /* Warna tombol */
+    color: #007BFF; /* Warna teks tombol */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #FFC107; /* Warna saat hover */
+}
+
+/* Featured Activities */
+#featured {
+    padding: 20px;
+    background-color: #fff; /* Warna latar belakang seksi */
+    margin: 15px; /* Jarak antar seksi */
+    border-radius: 8px; /* Sudut melengkung */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan */
+}
+
+.activities {
+    display: flex; /* Menampilkan kegiatan dalam barisan */
+    justify-content: space-around; /* Jarak antar kegiatan */
+    flex-wrap: wrap; /* Membungkus jika tidak muat */
+}
+
+.activity {
+    background: #f0f8ff; /* Warna latar belakang list */
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    flex: 1 0 30%; /* Lebar minimum 30% */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Bayangan */
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #fff; /* Warna latar belakang seksi */
+    padding: 20px;
+    margin: 15px; /* Jarak antar seksi */
+    border-radius: 8px; /* Sudut melengkung */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan */
+}
+
+.testimonial {
+    background: #f0f8ff; /* Warna latar belakang testimoni */
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Seksi lainnya */
+section {
+    padding: 20px;
+    background-color: white; /* Warna latar belakang seksi */
+    margin: 15px; /* Jarak antar seksi */
+    border-radius: 8px; /* Sudut melengkung */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan */
+}
+
+h2 {
+    border-bottom: 2px solid #007BFF; /* Garis bawah untuk heading */
+    padding-bottom: 10px; /* Jarak bawah heading */
+    margin-bottom: 15px; /* Jarak atas section */
+    color: #007BFF; /* Warna teks heading */
+}
+
+/* Footer */
+footer {
+    text-align: center; /* Memusatkan teks footer */
+    padding: 10px;
+    background-color: #007BFF; /* Warna latar belakang footer */
+    color: white; /* Warna teks footer */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Marquee */
+marquee {
+    background-color: #007BFF;
+    color: white;
+    font-size: 20px; 
+    padding: 10px 0;
+}
+
+/* Media Queries untuk responsivitas */
+@media (max-width: 768px) {}
+    nav ul li {
+        display: block; /* Menampilkan link secara vertikal di layar kecil */
+        margin: 10px 0; /* Jarak antar link */
+    }
+
+    #kontak a {
+        color: #3498db;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+    
+    #kontak a:hover {
+        color: #2980b9;
+    }
+
+    .guru-profil {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .guru {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .guru-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    .guru-info {
+        flex: 1;
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        background-color: #f1f1f1;
+        padding: 20px;
+    }
+    
+    .logo {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+    
